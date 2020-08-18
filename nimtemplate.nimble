@@ -1,11 +1,11 @@
 version     = "0.0.0"
-author      = "Your name"
+author      = "stisa"
 description = "Description of your library"
 license     = "MIT"
 
 srcDir = "src"
 
-requires "nim >= 1.2.2"
+requires "nim >= 1.2.6"
 
 task examples, "Build examples":
   withDir "examples":
