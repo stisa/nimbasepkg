@@ -13,4 +13,4 @@ task examples, "Build examples":
     discard
 
 task docs, "Build docs":
-  exec("nim doc --docRoot:@pkg --project --outdir:docs .\src\packagename.nim")
+  exec(r"nim doc --docRoot:@pkg --project --outdir:docs .\src\packagename.nim")
