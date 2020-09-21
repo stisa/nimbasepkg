@@ -10,7 +10,8 @@ Includes:
 * GitHub Actions
   - run the tests when `src` or `tests` changes
   - generate the docs and examples when files in `docs` and `examples` change
-  - build when `src` changes for nim devel, stable and `1.2.0`
+  - build when `src` changes for nim devel, stable and `1.2.0` (only useful for packages with `bin`)
+  - run `nim check nimtemplate.nim`, same as the build action but works for library packages too
   - automatically add a tag when a increase in the  `.nimble` file `version` is detected
 * Directory structure:
   - `src` and a public `nimtemplate/common.nim` for package code
