@@ -3,7 +3,9 @@ on:
   push:
     paths:
       - 'src/**'
-  workflow_dispatch:    
+  workflow_dispatch:   
+  schedule:
+     - cron: '3 2 1 * *' 
 jobs:
   build:
     runs-on: ubuntu-latest
