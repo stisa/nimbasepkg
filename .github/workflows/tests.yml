@@ -8,6 +8,9 @@ on:
     paths: 
       - 'src/**'
       - 'tests/**'
+  workflow_dispatch:   
+  schedule:
+    - cron: '3 2 1 * *' 
 jobs:
   tests:
     runs-on: ubuntu-latest
